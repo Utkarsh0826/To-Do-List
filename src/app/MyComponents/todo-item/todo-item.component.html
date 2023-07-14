@@ -1,0 +1,12 @@
+<div class="my-3" style="margin-left: 3vw">
+    <h5>{{todo.sno}}</h5>
+  <h5 class="ps-30">{{ todo.title }}</h5>
+  <p>{{ todo.desc }}</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" />
+    <label class="form-check-label me-5"> Mark if Done </label>
+  </div>
+  <button class="btn btn-sm btn-danger my-3" (click)="onClick(todo)">
+    Delete
+  </button>
+</div>

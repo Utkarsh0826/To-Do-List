@@ -1,0 +1,16 @@
+
+<app-add-todo (todoAdd)="AddTodo($event)"></app-add-todo>
+<h3 class="my-3 text-center" >Your To-Do List</h3>
+<h5
+  class="my-3 font-italic font-weight-light text-center"
+ 
+  *ngIf="todos.length == 0"
+>
+  ~No Todos to do~
+</h5>
+<div *ngFor="let todo of todos">
+  <app-todo-item
+    [todo]="todo"
+    (todoDelete)="DeleteTodo($event)"
+  ></app-todo-item>
+</div>

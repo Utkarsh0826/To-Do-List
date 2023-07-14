@@ -1,0 +1,11 @@
+.si{
+    font-size: larger;
+}
+.rounded{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    right: 25%;
+    bottom: 5%;
+    overflow: scroll;
+}
